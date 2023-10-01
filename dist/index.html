@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Storage</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Home</a><a href="#">About</a><a href="#">Albums</a>
+    </nav>
+
+    <div class="top-structure">
+        <h1 class="title">View the Collection</h1>
+        <h5 id="searchSelection">Viewing all albums</h5>
+        <div class="inputbar">
+            <div class="searchbar">
+                <label for="genrePick">Sort by Genre:</label>
+                <select name="genrePick" id="genrePick">
+                    <option value="All">All Genres</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Country">Country</option>
+                    <option value="Metal">Metal</option>
+                </select>
+                <input type="submit" value="Sort" id="genreSort">
+            </div>
+
+            <div class="add"><input type="submit" value="Add Album" id="addAlbum"></div>
+        </div>
+    </div>
+
+
+    <div class="add-album">
+        <h2>Add New Album</h2>
+
+        <div class="group">
+            <label for="albumName">Album Name:</label>
+            <input type="text" name="albumName" id="albumName">
+        </div>
+
+
+        <div class="group">
+            <label for="artistName">Artist Name:</label>
+            <input type="text" name="artistName" id="artistName">
+        </div>
+
+
+        <div class="group">
+            <label for="albumPhoto">Photo URL:</label>
+            <input type="url" name="albumPhoto" id="albumPhoto" placeholder="https://...">
+        </div>
+
+        <div class="group">
+            <label for="genre">Genre:</label>
+            <select name="genre" id="genre">
+                <option value="Pop">Pop</option>
+                <option value="Country">Country</option>
+                <option value="Metal">Metal</option>
+            </select>
+        </div>
+
+
+        <div class="group">
+            <input type="submit" value="Add Album" id="submitAddAlbum">
+            <input type="submit" value="Cancel" id="closeAddAlbum">
+
+        </div>
+    </div>
+
+    <div id="app"></div>
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="app/app.js"></script>
+</body>
+
+</html>

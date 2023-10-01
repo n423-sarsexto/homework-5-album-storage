@@ -1,0 +1,53 @@
+.add-album{
+    width: 50vw;
+    height: max-content;
+    position: fixed;
+    top: 25%;
+    right: 25%;
+    background-color: darkslateblue;
+    z-index: 10;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+
+    display: none;
+
+    h2{
+        text-align: center;
+        color: white;
+    }
+
+    label{
+        color: white;
+    }
+
+
+    .group{
+        padding-bottom: 20px;
+        width: 50%;
+        margin: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        label{
+            font-size: 20px;
+        }
+        input, select{
+            width: 60%;
+            height: 40px;
+            font-size: 18px;
+            padding: 5px;
+        }
+        input[type=submit]{
+            height: 50px;
+            width: 200px;
+            border: none;
+            border-radius: 10px;
+            background-color: lavender;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+}

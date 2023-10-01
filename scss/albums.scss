@@ -1,0 +1,34 @@
+#app{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+
+    .album{
+        width: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: lavender;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 20px 0px;
+
+        img{
+            width: 250px;
+        }
+
+        .albumInfo{
+            width: 250px;
+
+            .genreTag{
+                background-color: darkslateblue;
+                border-radius: 5px;
+                color: white;
+                padding: 2px;
+            }
+        }
+    }
+}

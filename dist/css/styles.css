@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+  font-family: sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: lavender;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.top-structure {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  padding-top: 50px;
+}
+.top-structure h1 {
+  font-family: sans-serif;
+  margin-bottom: 0px;
+}
+.top-structure h5 {
+  font-weight: normal;
+}
+.top-structure .inputbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-structure .inputbar label {
+  font-size: 20px;
+}
+.top-structure .inputbar select {
+  font-size: 16px;
+}
+.top-structure .inputbar input[type=submit] {
+  background-color: darkslateblue;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-album {
+  width: 50vw;
+  height: max-content;
+  position: fixed;
+  top: 25%;
+  right: 25%;
+  background-color: darkslateblue;
+  z-index: 10;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  display: none;
+}
+.add-album h2 {
+  text-align: center;
+  color: white;
+}
+.add-album label {
+  color: white;
+}
+.add-album .group {
+  padding-bottom: 20px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add-album .group label {
+  font-size: 20px;
+}
+.add-album .group input, .add-album .group select {
+  width: 60%;
+  height: 40px;
+  font-size: 18px;
+  padding: 5px;
+}
+.add-album .group input[type=submit] {
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  background-color: lavender;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#app {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 80%;
+}
+#app .album {
+  width: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: lavender;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px 0px;
+}
+#app .album img {
+  width: 250px;
+}
+#app .album .albumInfo {
+  width: 250px;
+}
+#app .album .albumInfo .genreTag {
+  background-color: darkslateblue;
+  border-radius: 5px;
+  color: white;
+  padding: 2px;
+}
+
+/*# sourceMappingURL=styles.css.map */
