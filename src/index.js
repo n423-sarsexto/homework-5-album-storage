@@ -31,14 +31,23 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 
 function addAlbumToDb() {
-  let album = {
-    albumName: $("#albumName").val(),
-    artistName: $("#artistName").val(),
-    albumPhoto: $("#albumPhoto").val(),
-    genre: $("#genre").val(),
-  };
+  if (
+    $("#albumName").val() == "" ||
+    $("#artistName").val() == "" ||
+    $("#albumPhoto").val() == "" ||
+    $("#genre").val() == ""
+  ) {
+    alert("Please fill out all fields.");
+  } else {
+    let album = {
+      albumName: $("#albumName").val(),
+      artistName: $("#artistName").val(),
+      albumPhoto: $("#albumPhoto").val(),
+      genre: $("#genre").val(),
+    };
 
-  addAlbum(album);
+    addAlbum(album);
+  }
 }
 
 async function addAlbum(album) {
@@ -52,6 +61,7 @@ async function addAlbum(album) {
     $("#albumPhoto").val("");
     $("#genre").val("");
 
+    alert("Your album has been added!");
     getAllAlbumData();
   } catch (e) {
     console.log(e);
